@@ -75,8 +75,6 @@ This repository contains **two subprojects**:
 If you have any questions, feel free to join our QQ group:
 **1006709313**
 
----
+![主图](https://github.com/user-attachments/assets/9be879b9-e1c0-42a5-885c-f4c2dc13a077)
 
-![Main Demo Image](https://github.com/user-attachments/assets/5b41c8c0-5ea8-431e-9fa9-dd67ad85dcf0)
 
----
