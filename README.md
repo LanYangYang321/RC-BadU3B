@@ -1,6 +1,3 @@
-Below is a fully English, polished version of your `README.md`, with an added link to the Chinese version:
-
----
 
 # RC-BadU3B
 
