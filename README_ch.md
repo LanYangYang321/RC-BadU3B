@@ -73,6 +73,4 @@
 如有任何疑问，欢迎加入 QQ 群：
 **1006709313**
 
----
-
-![主示意图](https://github.com/user-attachments/assets/5b41c8c0-5ea8-431e-9fa9-dd67ad85dcf0)
+![主图](https://github.com/user-attachments/assets/9be879b9-e1c0-42a5-885c-f4c2dc13a077)
