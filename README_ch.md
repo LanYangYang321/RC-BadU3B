@@ -1,40 +1,78 @@
+---
+
 # RC-BadU3B
-A remote BadUSB project, using esp32 and WCH chip.
 
-[![Bilibili 粉丝](https://img.shields.io/badge/dynamic/json?color=blue&label=BiliBili&labelColor=white&query=$.data.follower&url=https://api.bilibili.com/x/relation/stat?vmid=1084866085&logo=bilibili&style=flat-square)](https://space.bilibili.com/1084866085)
-[![YouTube](https://img.shields.io/badge/YouTube-white?logo=youtube&logoColor=FF0000&style=flat-square)](https://www.youtube.com/@lyyontop)
-[![GitHub last commit](https://img.shields.io/github/last-commit/LanYangYang321/RC-BadU3B?color=yellow&logo=github&labelColor=black&label=Latest&style=flat-square)](https://github.com/LanYangYang321/RC-BadU3B)
+[🔗 English version (README.md)](https://github.com/LanYangYang321/RC-BadU3B/blob/main/README.md)
 
-# 免责声明:
+基于 ESP32 与 WCH 芯片的远程 BadUSB 项目。
 
-本项目仅用于网络安全教育、技术研究与合法授权的测试用途。
-本项目中的所有代码、工具和演示内容，仅供学习参考，禁止将其用于任何未获授权的实际入侵或控制行为。
+[![Bilibili 粉丝](https://img.shields.io/badge/dynamic/json?color=blue\&label=BiliBili\&labelColor=white\&query=\$.data.follower\&url=https://api.bilibili.com/x/relation/stat?vmid=1084866085\&logo=bilibili\&style=flat-square)](https://space.bilibili.com/1084866085)
+[![YouTube 频道](https://img.shields.io/badge/YouTube-white?logo=youtube\&logoColor=FF0000\&style=flat-square)](https://www.youtube.com/@lyyontop)
+[![最新提交](https://img.shields.io/github/last-commit/LanYangYang321/RC-BadU3B?color=yellow\&logo=github\&label=Latest\&style=flat-square)](https://github.com/LanYangYang321/RC-BadU3B)
 
-请注意以下法律风险与责任：
+---
 
-本项目所涉及的远程访问功能，如被用于非法控制他人设备、窃取信息、破坏数据等行为，均属违法。
+## ⚠️ 免责声明
 
-任何使用者擅自将本项目用于非法目的（如入侵他人计算机系统、传播恶意程序等），其行为所产生的一切后果由其本人承担，作者不对任何违法使用行为承担责任。
+本项目仅用于 **网络安全教育**、**技术研究** 与 **合法授权测试**。
+所有代码、工具与演示仅供 **学习参考**，严禁用于未授权的实战入侵或设备控制。
 
-# 复刻前必看
-本项目中包含**2个子项目**：
-- 遥控BadUSB，即包含**超小接收器**和**esp32**通讯构成的遥控HID收发器。如需复刻此项目请看详情 [RMTbadusb](https://github.com/LanYangYang321/RC-BadU3B/tree/main/RMTbadusb)
-- 本地BadUSB，即包含SD存储卡模块，可内置需要执行的载荷。如需复刻此项目请看详情 [localBadUSB](https://github.com/LanYangYang321/RC-BadU3B/tree/main/localBadUSB)
-复刻本项目需要掌握**PCB焊接技术**，特别是*遥控BadUSB*中，需要焊接QFN封装的芯片，新手操作较为复杂。
+* **法律风险**
 
-# 硬件部分
-硬件部分分别参考[立创开源社区](https://oshwhub.com/)的[U盘版BadUSB](https://oshwhub.com/Albireo/Upan-ban-BADUSB)和[超小USB转蓝牙接头](https://oshwhub.com/lightandelectricity/bplug-ch)
+  * 如将远程访问功能用于非法设备控制、信息窃取或数据破坏，即属违法。
+  * 若任何用户擅自将本项目用于黑客攻击、散布恶意程序等非法行为，其产生的一切后果由其本人承担，作者概不负责。
 
-PCB的相关Gerber制板文件我放在了[制板文件](https://github.com/LanYangYang321/RC-BadU3B/tree/main/PCBGerber)
-可以自行获取并打样。
+---
 
-# 软件部分
-软件部分采用arduino开发环境进行开发。两个子文件的代码分别放在了两个文件夹中，其中关于“远控木马”的部分采用的是我之前自行编写的一个开源远控软件[tetrojan](https://github.com/LanYangYang321/tetrojan)
-实际使用使用时直接烧录arduino文件即可
+## 🔍 复刻前必看
 
-# 交流
-如有任何问题欢迎加入qq交流群：
-1006709313
+本仓库包含 **两个子项目**：
 
-![主图](https://github.com/user-attachments/assets/5b41c8c0-5ea8-431e-9fa9-dd67ad85dcf0)
+1. **遥控 BadUSB**
 
+   * 由超小型 USB 接收器与 ESP32 通信组成的远程 HID 收发器。
+   * 👉 详情请见 [RMTbadusb](https://github.com/LanYangYang321/RC-BadU3B/tree/main/RMTbadusb)
+
+2. **本地 BadUSB**
+
+   * 集成 SD 卡存储模块，可本地部署并执行自定义载荷。
+   * 👉 详情请见 [localBadUSB](https://github.com/LanYangYang321/RC-BadU3B/tree/main/localBadUSB)
+
+> **注意：** 复刻本项目需具备 **PCB 焊接** 技术，尤其是 QFN 封装芯片的焊接，对新手而言具有一定挑战。
+
+---
+
+## 🛠 硬件部分
+
+* **参考资源：**
+
+  * U 盘版 BadUSB（立创开源社区）：
+    [https://oshwhub.com/Albireo/Upan-ban-BADUSB](https://oshwhub.com/Albireo/Upan-ban-BADUSB)
+  * 超小 USB 转蓝牙接头：
+    [https://oshwhub.com/lightandelectricity/bplug-ch](https://oshwhub.com/lightandelectricity/bplug-ch)
+
+* **PCB 制板文件：**
+  所有 Gerber 文件已上传至 [PCBGerber](https://github.com/LanYangYang321/RC-BadU3B/tree/main/PCBGerber)，可直接下载并打样。
+
+---
+
+## 💻 软件部分
+
+* **开发环境：** Arduino IDE
+* **项目结构：**
+
+  * 两个子文件夹分别存放各自的 `.ino` 源码。
+  * 远控木马部分基于作者开源项目 [tetrojan](https://github.com/LanYangYang321/tetrojan)。
+
+> **使用方式：** 通过 Arduino IDE 将对应 `.ino` 烧录至 ESP32，即可启动相应功能。
+
+---
+
+## 🤝 交流与支持
+
+如有任何疑问，欢迎加入 QQ 群：
+**1006709313**
+
+---
+
+![主示意图](https://github.com/user-attachments/assets/5b41c8c0-5ea8-431e-9fa9-dd67ad85dcf0)
