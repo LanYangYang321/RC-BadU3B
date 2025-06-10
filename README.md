@@ -70,7 +70,7 @@ This repository contains **two subprojects**:
 ## 🤝 Community & Support
 
 If you have any questions, feel free to join our QQ group:
-**1006709313**
+**1045676237**
 
 ![主图](https://github.com/user-attachments/assets/9be879b9-e1c0-42a5-885c-f4c2dc13a077)
 
